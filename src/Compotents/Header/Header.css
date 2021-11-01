@@ -1,0 +1,32 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.logo-container img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header-buttons {
+    margin: 30px;
+}
+
+.header-buttons button {
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid gold;
+    color: black;
+}
