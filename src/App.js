@@ -1,13 +1,15 @@
 import React from "react";
 import './App.css';
-import Header from "./Compotents/Header/Header.js";
+import Header from "./Compotents/Header/Header";
+
 
 function App() {
-  return (
-    <>
-        <Header/>
-    </>
-  );
+
+    return (
+        <>
+            <Header/>
+        </>
+    );
 }
 
 export default App;

@@ -1,14 +1,14 @@
 import React from "react";
 import "./Header.css";
-// import logo from "/src/Assets/logo.png";
+import logo from "../../Assets/logo.png"
+import logoGroot from "../../Assets/logo-groot.png"
 
 function Header() {
     return(
         <nav className="header">
 
            <span className="logo-container">
-              {/*<img src={logo} alt="logo"/>*/}
-               <h1>Foodkeeper</h1>
+              <img src={logoGroot} alt="logo"/>
            </span>
 
             <span className="header-buttons">
@@ -17,7 +17,9 @@ function Header() {
              >
                 +
             </button>
-            <button type="button">
+            <button
+                type="button"
+            >
                 Profile
             </button>
             </span>
