@@ -26,8 +26,8 @@
 }
 .header-buttons button {
     background-color: transparent;
-    border: 3px solid gold;
-    color: gold;
+    border: 3px solid #f2ee56;
+    color: #f2ee56;
     text-align: center;
     text-decoration: none;
     display: inline-block;

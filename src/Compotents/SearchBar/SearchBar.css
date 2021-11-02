@@ -13,10 +13,10 @@
 
 .searchbar button {
     border-radius:10px;
-    border: 1px solid gold;
+    border: 1px solid #f2ee56;
     margin: 5px;
     padding: 8px 16px;
-    background-color: gold;
+    background-color: #f2ee56;
     color: white;
     cursor: pointer;
     outline: none;
