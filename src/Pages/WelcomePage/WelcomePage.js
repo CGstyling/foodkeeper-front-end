@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
+import logo from "../../Assets/logo-groot.png"
 
 function WelcomePage() {
     const[loginOpen, setLoginOpen] = useState(false);
@@ -8,25 +9,26 @@ function WelcomePage() {
 
     return(
         <div className="container">
+            <img src={logo} alt="logo"/>
 
             <h1>Welcome to foodkeeper</h1>
             <h3>Keep track of all your recipes</h3>
 
             <div className="box-controller">
 
-                <button
+                <div
                     className={"controller" + (loginOpen ? "selected-controller" : "")}
                      onClick={() => { setLoginOpen(true); setRegisterOpen(false)}}
                 >
                     Sign In
-                </button>
+                </div>
 
-            <button
+            <div
                 className={"controller" + (registerOpen ? "selected-controller" : "")}
                 onClick={() => {setRegisterOpen(true); setLoginOpen(false)}}
             >
                 Sign up
-            </button>
+            </div>
 
             </div>
 
