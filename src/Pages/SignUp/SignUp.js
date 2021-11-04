@@ -1,11 +1,11 @@
 import React from "react";
 import "./SignUp.css";
-import {useHistory} from "react-router-dom";
+// import {useHistory} from "react-router-dom";
 import {useForm} from "react-hook-form";
 
 function SignUp({setLoginOpen, setRegisterOpen}) {
     const {register, handleSubmit} = useForm();
-    const history = useHistory();
+    // const history = useHistory();
 
     function handleFormSubmit(data) {
         // history.push("/signin")
