@@ -10,11 +10,11 @@ function AddRecipe() {
     }
 
     return(
-        <>
+        <div className="add-recipe-container">
             <h1>Upload here a recipe</h1>
             {/*    formulie maken: title, afbeelding, text*/}
 
-            <form onSubmit={handleSubmit(onFormSubmit)}>
+            <form className="add-recipe-form" onSubmit={handleSubmit(onFormSubmit)}>
 
                 <label htmlFor="title">
                     <p>Name your recipe:</p>
@@ -64,7 +64,7 @@ function AddRecipe() {
                     Save recipe!
                 </button>
             </form>
-        </>
+        </div>
     );
 }
 
