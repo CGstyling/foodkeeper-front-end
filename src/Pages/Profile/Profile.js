@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.css"
+import RecipeCard from "../../Compotents/RecipeCard/RecipeCard";
 
 
 function Profile() {
@@ -25,12 +26,19 @@ function Profile() {
                 </button>
                 <hr/>
             </div>
-
-            <div className="grid">
-
+            {/*Hard coded recipe cards*/}
+            <div className="recipe-wrapper">
+                <RecipeCard/>
+                <RecipeCard/>
+                <RecipeCard/>
+                <RecipeCard/>
+                <RecipeCard/>
+                <RecipeCard/>
+                <RecipeCard/>
+                <RecipeCard/>
             </div>
         </div>
-    );
+    )
 }
 
 export default Profile;
