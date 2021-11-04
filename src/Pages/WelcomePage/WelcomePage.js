@@ -8,6 +8,7 @@ function WelcomePage() {
     const[registerOpen, setRegisterOpen] = useState(false);
 
     return(
+
         <div className="container">
             <img src={logo} alt="logo"/>
 
@@ -17,14 +18,14 @@ function WelcomePage() {
             <div className="box-controller">
 
                 <div
-                    className={"controller" + (loginOpen ? "selected-controller" : "")}
+                    className={(loginOpen ? "selected-controller" : "controller")}
                      onClick={() => { setLoginOpen(true); setRegisterOpen(false)}}
                 >
                     Sign In
                 </div>
 
             <div
-                className={"controller" + (registerOpen ? "selected-controller" : "")}
+                className={(registerOpen ? "selected-controller" : "controller")}
                 onClick={() => {setRegisterOpen(true); setLoginOpen(false)}}
             >
                 Sign up
