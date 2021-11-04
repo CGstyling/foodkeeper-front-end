@@ -1,11 +1,21 @@
 import React from "react";
 import "./Home.css"
+import RecipeCard from "../../Compotents/RecipeCard/RecipeCard";
 
 function Home() {
     return(
-        <>
-            <h1>Home Page</h1>
-        </>
+        <div className="recipe-wrapper">
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+            <RecipeCard/>
+        </div>
     );
 }
 
