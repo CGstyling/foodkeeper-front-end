@@ -3,12 +3,14 @@ import "./SignUp.css";
 import {useHistory} from "react-router-dom";
 import {useForm} from "react-hook-form";
 
-function SignUp() {
+function SignUp({setLoginOpen, setRegisterOpen}) {
     const {register, handleSubmit} = useForm();
     const history = useHistory();
 
     function handleFormSubmit(data) {
-        history.push("/signin")
+        // history.push("/signin")
+        setLoginOpen(true);
+        setRegisterOpen(false);
         console.log("ik heb mij geregistreerd")
     }
 
