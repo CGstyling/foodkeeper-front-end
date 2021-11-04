@@ -12,7 +12,7 @@ function WelcomePage() {
             <img src={logo} alt="logo"/>
 
             <h1>Welcome to foodkeeper</h1>
-            <h3>Keep track of all your recipes</h3>
+            {/*<h3>Keep track of all your recipes</h3>*/}
 
             <div className="box-controller">
 
@@ -34,7 +34,7 @@ function WelcomePage() {
 
             <div className="box-container">
                 {loginOpen && <SignIn/>}
-                {registerOpen && <SignUp/>}
+                {registerOpen && <SignUp setRegisterOpen={setRegisterOpen} setLoginOpen={setLoginOpen}/>}
             </div>
 
         </div>
