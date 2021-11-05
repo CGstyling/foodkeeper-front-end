@@ -33,6 +33,7 @@ function WelcomePage() {
 
             </div>
 
+
             <div className="box-container">
                 {loginOpen && <SignIn/>}
                 {registerOpen && <SignUp setRegisterOpen={setRegisterOpen} setLoginOpen={setLoginOpen}/>}
