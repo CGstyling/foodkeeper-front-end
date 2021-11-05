@@ -12,7 +12,6 @@ function AddRecipe() {
     return(
         <div className="add-recipe-container">
             <h1>Upload here a recipe</h1>
-            {/*    formulie maken: title, afbeelding, text*/}
 
             <form className="add-recipe-form" onSubmit={handleSubmit(onFormSubmit)}>
 
